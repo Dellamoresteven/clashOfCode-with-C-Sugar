@@ -1,0 +1,23 @@
+@header
+
+#inc e
+
+using namespace std;
+
+int main()
+{
+    string B;
+    cin >> B; cin.ignore();
+
+    string newTok = "";
+
+    for_each(B.begin(), B.end(), [&newTok](auto c){
+        if(c == '0'){
+            newTok += "1";
+        } else{
+            newTok += "0";
+        }
+    });
+    
+    print( newTok + "\n");
+}
