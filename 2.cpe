@@ -1,0 +1,22 @@
+@header
+#inc e
+
+#include <math.h>
+
+int main()
+{
+    std::string N;
+    std::getline(std::cin, N);
+    var num = 0;
+    int j = 0;
+    std::for_each( N.begin(), N.end(), 
+        [&j, &num](auto c){
+            // print("std::atoi: " + std::atoi(&c) + "\n");
+            num += (std::atoi(&c) * pow(-2, j));
+            // print("Num: " + num + "\n");
+            j++;
+        } 
+    );
+
+    print(num);
+}

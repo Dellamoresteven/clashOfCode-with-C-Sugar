@@ -1,0 +1,20 @@
+@header
+
+#inc e 
+
+using namespace std;
+
+int main()
+{
+    int N;
+    cin >> N; cin.ignore();
+    var vec = vector int;
+    for (int i = 0; i < N; i++) {
+        string PATH;
+        getline(cin, PATH);
+        var n = count(PATH.begin(), PATH.end(), '/');
+        vec.push( n );
+    }
+
+    printv(vec, "\n");
+}
