@@ -1,0 +1,28 @@
+@header
+#inc e
+
+#include <math.h>
+
+using namespace std;
+
+def vector<string> splitByDelim( s, d ) {
+    s += " ";
+    var ret = vector std::string;
+    std::string delim(d);
+    std::string token;
+    while ( s.find(d) != std::string::npos) {
+        token = s.substr(0, s.find(d));
+        ret.push(token);
+        s.erase(0, s.find(d) + delim.length());
+    }
+    return ret;
+}
+
+int main() {
+    std::string S;
+    getline(std::cin, S);
+    map<int, int> sorted;
+    // var vecSplit = splitByDelim<std::string, std::string>( S, " " );
+    var vecSplit = splitByDelim( S, " " );
+    printv(vecSplit, "\n");
+}
