@@ -1,0 +1,18 @@
+#inc e
+
+// def int add(int a, int b, int c, std::vector<int> d) {
+//     printv(d, ", ");
+//     return (a+b+c);
+// }
+
+def add(a, b, c, d) {
+    printv(d, ", ");
+    return (a+b+c);
+}
+
+int main() {
+    var vec = vector int;
+    vec.pushv(1,2,3);
+    var x = add(1, 2, 9, vec);
+    print(x + "\n");
+}

@@ -1,0 +1,49 @@
+
+#inc e
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cin >> n;
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+    switch(n){
+        case 0: 
+            println("zero");
+            break;
+        case 1: 
+            println("one");
+            break;
+        case 2: 
+            println("two");
+            break;
+        case 3: 
+            println("three");
+            break;
+        case 4: 
+            println("four");
+            break;
+        case 5: 
+            println("five");
+            break;
+        case 6: 
+            println("six");
+            break;
+        case 7:
+            println("seven");
+            break;
+        case 8: 
+            println("eight");
+            break;
+        case 9:
+            println("nine");
+            break;
+        default: 
+            println("Greater than 9");
+            break;
+    }
+
+    return 0;
+}

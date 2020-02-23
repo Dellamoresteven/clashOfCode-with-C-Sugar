@@ -13,7 +13,7 @@ int main()
         string PATH;
         getline(cin, PATH);
         var n = count(PATH.begin(), PATH.end(), '/');
-        vec.push( n );
+        vec.pushv( n );
     }
 
     printv(vec, "\n");
