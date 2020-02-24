@@ -2,8 +2,9 @@
 URL = https://github.com/Dellamoresteven/C-Sugar */
 
 // author: Steven Dellamore
-// date: 2020-2-22
+// date: 2020-2-23
 // version: 1.0.0
+
 
 #include <iostream>
 #include <stdlib.h>
@@ -23,17 +24,22 @@ URL = https://github.com/Dellamoresteven/C-Sugar */
 
 using namespace std;
 
-template <typename T, typename U, typename G, typename H >
-int max_of_four( T a, U b, G c, H d ) {
-    return int ( std::max( std::max( a ,b ), std::max( c, d ) ) );
-}
+int main()
+{
+    int N;
+    cin >> N; cin.ignore();
 
-int main() {
-    int a, b, c, d;
-    scanf("%d %d %d %d", &a, &b, &c, &d);
-    // ans @TODO
-    auto ans = max_of_four(a, b, c, d);
-    std::cout << ans << std::endl;
+    // str @TODO
+    auto str = to_string( N );
+    if(str.length() == 1) {
+        std::cout <<  str  << std::endl;
+        return 1;
+    }
+    str = str.substr( str.length() - 1, str.length() - 1 );
+    std::cout <<  str  << std::endl;
     
-    return 0;
+    /* Does not work with Negatives */
+    // var lastDig = N % 10;
+
+    // println( lastDig );
 }
