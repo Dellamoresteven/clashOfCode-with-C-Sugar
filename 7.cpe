@@ -1,0 +1,29 @@
+@header
+
+#inc e
+
+using namespace std;
+
+def bool isPrime( n ) {
+    if (n <= 1) 
+        return false; 
+  
+    for (int i = 2; i < n; i++) 
+        if (n % i == 0) 
+            return false; 
+  
+    return true; 
+}
+
+int main()
+{
+    int x;
+    cin >> x; cin.ignore();
+    for(;;) {
+        x++;
+        if(isPrime(x)){
+            println(x);
+            break;
+        }
+    }
+}
